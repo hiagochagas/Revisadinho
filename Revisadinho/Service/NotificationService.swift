@@ -123,5 +123,6 @@ class NotificationService {
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 2 * 60, repeats: false) // the time interval is equal to 2 min
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(request)
+        print("Everything worked out") //Test for CI
     }
 }
