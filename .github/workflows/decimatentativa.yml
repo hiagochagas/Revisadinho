@@ -13,7 +13,7 @@ jobs:
       - name: Github Action for SwiftLint
         uses: norio-nomura/action-swiftlint@3.2.1
   Test:
-    runs-on: macos-latest
+    runs-on: macos-11
     steps:
       - uses: actions/checkout@v1
       - name: Select Xcode
