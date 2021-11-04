@@ -21,4 +21,4 @@ jobs:
       - name: List all available simulators
         run: sudo xcrun simctl list
       - name: Run unit tests
-        run: xcodebuild test -scheme Revisadinho -project Revisadinho.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 12,OS=15.0' | xcpretty && exit ${PIPESTATUS[0]}    
+        run: xcodebuild test -scheme Revisadinho -project Revisadinho.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.4' | xcpretty && exit ${PIPESTATUS[0]}    
